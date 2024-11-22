@@ -98,3 +98,10 @@ local AntiFigureHear = Tab:CreateButton({
    game.ReplicatedStorage.RemotesFolder.Crouch:FireClient()
    end,
 })
+
+local AntiA90 = Tab:CreateButton({
+   Name = "Anti A90",
+   Callback = function()
+   game.ReplicatedStorage.RemotesFolder.A90:Destroy()
+   end,
+})
