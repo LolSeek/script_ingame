@@ -91,3 +91,10 @@ local AntiEyes = Tab:CreateButton({
    game.ReplicatedStorage.GameData.EntityDisableEyes.Value = true
    end,
 })
+
+local AntiFigureHear = Tab:CreateButton({
+   Name = "Anti Figure Hearing",
+   Callback = function()
+   game.ReplicatedStorage.RemotesFolder.Crouch:FireClient()
+   end,
+})
