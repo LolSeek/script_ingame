@@ -70,3 +70,24 @@ local ESPDoor = Tab:CreateButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/LolSeek/script_ingame/refs/heads/main/PlayerESP"))()
    end,
 })
+
+local AntiScreech = Tab:CreateButton({
+   Name = "Anti Screech",
+   Callback = function()
+   game.ReplicatedStorage.GameData.EntityDisableScreech.Value = true
+   end,
+})
+
+local AntiDupe = Tab:CreateButton({
+   Name = "Anti Dupe",
+   Callback = function()
+   game.ReplicatedStorage.GameData.EntityDisableDupe.Value = true
+   end,
+})
+
+local AntiEyes = Tab:CreateButton({
+   Name = "Anti Eyes",
+   Callback = function()
+   game.ReplicatedStorage.GameData.EntityDisableEyes.Value = true
+   end,
+})
