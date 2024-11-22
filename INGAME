@@ -64,42 +64,42 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
-local ESPDoor = Tab:CreateButton({
+local ESPDoor = PlayerTab:CreateButton({
    Name = "Players Esp",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/LolSeek/script_ingame/refs/heads/main/PlayerESP"))()
    end,
 })
 
-local AntiScreech = Tab:CreateButton({
+local AntiScreech = PlayerTab:CreateButton({
    Name = "Anti Screech",
    Callback = function()
    game.ReplicatedStorage.GameData.EntityDisableScreech.Value = true
    end,
 })
 
-local AntiDupe = Tab:CreateButton({
+local AntiDupe = PlayerTab:CreateButton({
    Name = "Anti Dupe",
    Callback = function()
    game.ReplicatedStorage.GameData.EntityDisableDupe.Value = true
    end,
 })
 
-local AntiEyes = Tab:CreateButton({
+local AntiEyes = PlayerTab:CreateButton({
    Name = "Anti Eyes",
    Callback = function()
    game.ReplicatedStorage.GameData.EntityDisableEyes.Value = true
    end,
 })
 
-local AntiFigureHear = Tab:CreateButton({
+local AntiFigureHear = PlayerTab:CreateButton({
    Name = "Anti Figure Hearing",
    Callback = function()
    game.ReplicatedStorage.RemotesFolder.Crouch:FireClient()
    end,
 })
 
-local AntiA90 = Tab:CreateButton({
+local AntiA90 = PlayerTab:CreateButton({
    Name = "Anti A90",
    Callback = function()
    game.ReplicatedStorage.RemotesFolder.A90:Destroy()
